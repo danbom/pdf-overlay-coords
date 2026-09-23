@@ -1,0 +1,28 @@
+:root { color-scheme: light dark; --ink:#16181d; --mute:#6b7280; --line:#e5e7eb; --bg:#fafafa; --card:#fff; }
+@media (prefers-color-scheme: dark){ :root{ --ink:#e8eaed; --mute:#9aa1ab; --line:#2a2e35; --bg:#111317; --card:#181b20; } }
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--ink);font:15px/1.7 system-ui,-apple-system,"Segoe UI",sans-serif;word-break:keep-all}
+main{max-width:980px;margin:0 auto;padding:40px 16px 80px}
+h1{font-size:24px;margin:0 0 6px;letter-spacing:-.02em}
+.sub{color:var(--mute);margin:0 0 28px}
+.panel{background:var(--card);border:1px solid var(--line);border-radius:10px;padding:16px;margin-bottom:16px;overflow-x:auto}
+.row{display:flex;gap:8px 10px;align-items:center;flex-wrap:wrap}
+button{font:inherit;padding:6px 12px;border:1px solid var(--line);background:var(--card);color:var(--ink);border-radius:7px;cursor:pointer}
+button[aria-pressed="true"]{background:var(--ink);color:var(--bg);border-color:var(--ink)}
+code{font-family:ui-monospace,SFMono-Regular,Menlo,monospace;font-size:13px}
+.mute,.note{color:var(--mute);font-size:13px}
+.note{margin:10px 0 0}
+.ok{color:#15803d}.bad{color:#b91c1c}
+table{border-collapse:collapse;width:100%;font-size:14px;font-variant-numeric:tabular-nums}
+th,td{text-align:left;padding:6px 10px;border-bottom:1px solid var(--line);white-space:nowrap}
+.legend{display:inline-flex;align-items:center;gap:6px}
+.legend::before{content:"";width:12px;height:12px;border-radius:3px;border:2px solid currentColor;background:color-mix(in srgb,currentColor 20%,transparent)}
+label.legend::before{display:none}
+.legend.saved{color:#dc2626}.legend.flip{color:#d97706}.legend.vp{color:#16a34a}
+.doc{display:flex;justify-content:center;border:1px solid var(--line);border-radius:10px;overflow:auto;background:var(--card);padding:12px}
+.overlay{position:absolute;inset:0;z-index:2;cursor:crosshair}
+.box{position:absolute;border:2px solid;pointer-events:none}
+.box.saved{border-color:#dc2626;background:rgba(220,38,38,.12)}
+.box.flip{border-color:#d97706;background:rgba(217,119,6,.12);border-style:dashed}
+.box.vp{border-color:#16a34a;background:rgba(22,163,74,.14)}
+.dot{position:absolute;width:10px;height:10px;margin:-5px 0 0 -5px;border-radius:50%;background:#7c3aed;box-shadow:0 0 0 2px #fff;pointer-events:none}
