@@ -3,6 +3,10 @@
 PDF 위에 그린 박스가 확대·축소하면 어긋나는 이유를 한 화면에서 비교하는 최소 예제예요.
 블로그 글 「브라우저에서 문서 다루기 #2」의 재현 저장소입니다.
 
+**▶ 라이브 데모: https://pdf-overlay-coords.vercel.app**
+
+[![screenshot](docs/screenshot.png)](https://pdf-overlay-coords.vercel.app)
+
 ## 결론 먼저
 
 | 저장 방식 | 배율을 바꾸면 | CropBox 원점이 0이 아니면 | /Rotate 90이면 |
