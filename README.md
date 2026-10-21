@@ -26,7 +26,7 @@ npm run dev      # http://localhost:3000
 npm run versions # next / react-pdf / pdfjs-dist 버전 확인
 ```
 
-`next.config.ts`는 비어 있어요. 이유는 [1편 저장소](https://github.com/danbom/nextjs-pdfjs-minimal)에 있습니다.
+`next.config.ts`는 비어 있어요. 이유는 [1편 저장소](https://github.com/hachi-008/nextjs-pdfjs-minimal)에 있습니다.
 
 ## 화면에서 볼 것
 
